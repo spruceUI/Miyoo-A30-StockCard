@@ -1,0 +1,23 @@
+{
+    "label":"PPSSPP",
+    "icon":"icon_regular_72.png",
+    "launch":"launch.sh",
+    "iconsel":"",
+    "rompath":"../../Roms/PSP",
+    "imgpath":"../../Imgs/PSP",
+    "useswap":0,
+    "shortname":0,
+    "hidebios":0,
+	"extlist":"iso|cso",
+    "launchlist": [
+        {
+            "name": "PPSSPPSDL",
+            "launch": "launch.sh"
+        },
+        {
+            "name": "PPSSPP",
+            "launch": "launch1.sh"
+        }		
+    ]
+}
+    

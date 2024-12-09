@@ -1,0 +1,49 @@
+{
+    "name": "Super Onion Entertainment System - fix",
+    "author": "TheDewd",
+    "description": "SNES Classic inspired theme for Onion",
+    "hideLabels": {
+        "icons": true,
+        "hints": true
+    },
+    "batteryPercentage": {
+        "visible": false,
+        "font": "DIN Condensed Bold.ttf",
+        "size": 18,
+        "color": "#757575",
+        "offsetX": 0,
+        "offsetY": 0,
+        "onleft": false
+    },
+    "title": {
+        "font": "HYZhengYuan-45W.ttc",
+        "size": 24,
+        "color": "#777777"
+    },
+    "hint": {
+        "font": "YHmg.ttf",
+        "size": 24,
+        "color": "#FFFFFF"
+    },
+    "currentpage": {
+        "color": "#C5C3D1"
+    },
+    "total": {
+        "color": "#C5C3D1"
+    },
+    "grid": {
+        "font": "HYZhengYuan-45W.ttc",
+        "grid1x4": 22,
+        "grid3x4": 22,
+        "color": "#757575",
+        "selectedcolor": "#FFFFFF",
+        "iconxoff1x4":0,
+        "iconyoff1x4":0,
+        "txtyoff1x4":-30
+    },
+    "list": {
+        "font": "HYZhengYuan-45W.ttc",
+        "size": 24,
+        "color": "#FFFFFF"
+    }
+}

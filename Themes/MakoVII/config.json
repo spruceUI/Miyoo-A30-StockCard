@@ -1,0 +1,43 @@
+{
+    "name":"MakoVII - Gloomy_Background755",
+    "title":{
+        "font":"Exo-2-Bold-Italic.ttc",
+        "size":36,
+        "color":"#FFFFFF"
+    },
+    "path":{
+        "font":"Exo-2-Bold-Italic.ttc",
+        "size":24,
+        "color":"#FFFFFF"
+    },
+    "hint":{
+        "font":"Exo-2-Bold-Italic.ttc",
+        "size":40,
+        "color":"#FFFFFF"
+    },
+    "currentpage":{
+        "font":"Exo-2-Bold-Italic.TTF",
+        "size":40,
+        "color":"#FFFFFF"
+    },
+    "total":{
+        "font":"Exo-2-Bold-Italic.TTF",
+        "size":40,
+        "color":"#FFFFFF"
+    },
+    "grid":{
+        "font":"Exo-2-Bold-Italic.ttc",
+        "fontascii":"Exo-2-Bold-Italic.ttc",
+        "grid1x4":25,
+        "grid3x4":18,
+        "color":"#FFFFFF",
+        "selectedcolor":"#FFFFFF"       
+    },
+    "list":{
+        "font":"Exo-2-Bold-Italic.ttc",
+        "fontascii":"Exo-2-Bold-Italic.ttc",
+        "size":25,
+        "color":"#FFFFFF",
+        "selectedcolor":"#FFFFFF"       
+    }    
+}   

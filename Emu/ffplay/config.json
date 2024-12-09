@@ -1,0 +1,12 @@
+{
+    "label":"FFPlay",
+    "icon":"ffplay.png",
+    "launch":"launch.sh",
+    "iconsel":"",
+    "rompath":"../../Video",
+    "imgpath":"../../Imgs/Video",
+    "useswap":1,
+    "shortname":0,
+    "hidebios":0
+}
+    

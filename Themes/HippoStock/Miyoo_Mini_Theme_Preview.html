@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Miyoo Mini Theme Preview</title>
+		<script type="text/javascript">
+			function BatteryChange() {
+				var Image = document.querySelectorAll('#power-icon');
+				var BtnText = document.getElementById('BtnBattery');
+
+				for(var i = 0; i < Image.length; i++) {
+					if (Image[i].src.match("power-full-icon.png")) {
+						Image[i].src = "skin/power-0%-icon.png";
+						BtnText.innerHTML = "Battery 0%";
+					}
+					else if (Image[i].src.match("power-0%-icon.png")) {
+						Image[i].src = "skin/power-20%-icon.png";
+						BtnText.innerHTML = "Battery 20%";
+					}
+					else if (Image[i].src.match("power-20%-icon.png")) {
+						Image[i].src = "skin/power-50%-icon.png";
+						BtnText.innerHTML = "Battery 50%";
+					}
+					else if (Image[i].src.match("power-50%-icon.png")) {
+						Image[i].src = "skin/power-80%-icon.png";
+						BtnText.innerHTML = "Battery 80%";
+					}
+					else if (Image[i].src.match("power-80%-icon.png")) {
+						Image[i].src = "skin/power-full-icon.png";
+						BtnText.innerHTML = "Battery 100%";
+					}
+				}
+			}
+			function ItemChange() {
+				var Opt1 = document.getElementById('ic-1');
+				var Opt2 = document.getElementById('ic-2');
+				var Opt3 = document.getElementById('ic-3');
+				var Opt4 = document.getElementById('ic-4');
+				var Dot1 = document.getElementById('dot-1');
+				var Dot2 = document.getElementById('dot-2');
+				var Dot3 = document.getElementById('dot-3');
+				var Dot4 = document.getElementById('dot-4');
+				var Dot5 = document.getElementById('dot-5');
+				var Dot6 = document.getElementById('dot-6');
+				var BtnText = document.getElementById('BtnOption');
+				var Opt1Text = document.getElementById('Opt1Text');
+				var Opt2Text = document.getElementById('Opt2Text');
+				var Opt3Text = document.getElementById('Opt3Text');
+				var Opt4Text = document.getElementById('Opt4Text');
+
+				if (Opt1.src.match("ic-recent-f.png")) {
+					Opt1.src = "skin/ic-recent-n.png";
+					Opt2.src = "skin/ic-favorite-f.png";
+					Opt3.src = "skin/ic-game-n.png";
+					Opt4.src = "skin/ic-retroarch-n.png";
+					Dot1.src = "skin/dot-n.png"
+					Dot2.src = "skin/dot-a.png"
+					Dot3.src = "skin/dot-n.png"
+					Dot4.src = "skin/dot-n.png"
+					Dot5.src = "skin/dot-n.png"
+					Dot6.src = "skin/dot-n.png"
+					Opt1Text.innerHTML = "Recent"
+					Opt2Text.innerHTML = "Favorites"
+					Opt3Text.innerHTML = "Consoles"
+					Opt4Text.innerHTML = "Expert"
+					BtnText.innerHTML = "Item 2/6";
+				}
+				else if (Opt2.src.match("ic-favorite-f.png")) {
+					Opt1.src = "skin/ic-recent-n.png";
+					Opt2.src = "skin/ic-favorite-n.png";
+					Opt3.src = "skin/ic-game-f.png";
+					Opt4.src = "skin/ic-retroarch-n.png";
+					Dot1.src = "skin/dot-n.png"
+					Dot2.src = "skin/dot-n.png"
+					Dot3.src = "skin/dot-a.png"
+					Dot4.src = "skin/dot-n.png"
+					Dot5.src = "skin/dot-n.png"
+					Dot6.src = "skin/dot-n.png"
+					Opt1Text.innerHTML = "Recent"
+					Opt2Text.innerHTML = "Favorites"
+					Opt3Text.innerHTML = "Consoles"
+					Opt4Text.innerHTML = "Expert"
+					BtnText.innerHTML = "Item 3/6";
+				}
+				else if (Opt3.src.match("ic-game-f.png")) {
+					Opt1.src = "skin/ic-recent-n.png";
+					Opt2.src = "skin/ic-favorite-n.png";
+					Opt3.src = "skin/ic-game-n.png";
+					Opt4.src = "skin/ic-retroarch-f.png";
+					Dot1.src = "skin/dot-n.png"
+					Dot2.src = "skin/dot-n.png"
+					Dot3.src = "skin/dot-n.png"
+					Dot4.src = "skin/dot-a.png"
+					Dot5.src = "skin/dot-n.png"
+					Dot6.src = "skin/dot-n.png"
+					Opt1Text.innerHTML = "Recent"
+					Opt2Text.innerHTML = "Favorites"
+					Opt3Text.innerHTML = "Consoles"
+					Opt4Text.innerHTML = "Expert"
+					BtnText.innerHTML = "Item 4/6";
+				}
+				else if (Opt4.src.match("ic-retroarch-f.png")) {
+					Opt1.src = "skin/ic-favorite-n.png";
+					Opt2.src = "skin/ic-game-n.png";
+					Opt3.src = "skin/ic-retroarch-n.png";
+					Opt4.src = "skin/ic-app-f.png";
+					Dot1.src = "skin/dot-n.png"
+					Dot2.src = "skin/dot-n.png"
+					Dot3.src = "skin/dot-n.png"
+					Dot4.src = "skin/dot-n.png"
+					Dot5.src = "skin/dot-a.png"
+					Dot6.src = "skin/dot-n.png"
+					Opt1Text.innerHTML = "Favorites"
+					Opt2Text.innerHTML = "Consoles"
+					Opt3Text.innerHTML = "Expert"
+					Opt4Text.innerHTML = "App"
+					BtnText.innerHTML = "Item 5/6";
+				}
+				else if (Opt4.src.match("ic-app-f.png")) {
+					Opt1.src = "skin/ic-game-n.png";
+					Opt2.src = "skin/ic-retroarch-n.png";
+					Opt3.src = "skin/ic-app-n.png";
+					Opt4.src = "skin/ic-setting-f.png";
+					Dot1.src = "skin/dot-n.png"
+					Dot2.src = "skin/dot-n.png"
+					Dot3.src = "skin/dot-n.png"
+					Dot4.src = "skin/dot-n.png"
+					Dot5.src = "skin/dot-n.png"
+					Dot6.src = "skin/dot-a.png"
+					Opt1Text.innerHTML = "Consoles"
+					Opt2Text.innerHTML = "Expert"
+					Opt3Text.innerHTML = "App"
+					Opt4Text.innerHTML = "Settings"
+					BtnText.innerHTML = "Item 6/6";
+				}
+				else if (Opt4.src.match("ic-setting-f.png")) {
+					Opt1.src = "skin/ic-recent-f.png";
+					Opt2.src = "skin/ic-favorite-n.png";
+					Opt3.src = "skin/ic-game-n.png";
+					Opt4.src = "skin/ic-retroarch-n.png";
+					Dot1.src = "skin/dot-a.png"
+					Dot2.src = "skin/dot-n.png"
+					Dot3.src = "skin/dot-n.png"
+					Dot4.src = "skin/dot-n.png"
+					Dot5.src = "skin/dot-n.png"
+					Dot6.src = "skin/dot-n.png"
+					Opt1Text.innerHTML = "Recent"
+					Opt2Text.innerHTML = "Favorites"
+					Opt3Text.innerHTML = "Consoles"
+					Opt4Text.innerHTML = "Expert"
+					BtnText.innerHTML = "Item 1/6";
+				}
+			}
+			function TextDisplay() {
+				var Opt1Text = document.getElementById('Opt1Text');
+				var Opt2Text = document.getElementById('Opt2Text');
+				var Opt3Text = document.getElementById('Opt3Text');
+				var Opt4Text = document.getElementById('Opt4Text');
+				var TextOpen = document.querySelectorAll('#TextOpen');
+				var TextBack = document.querySelectorAll('#TextBack');
+				var ListTitle = document.getElementById('ListTitle');
+				var ListCount = document.querySelectorAll('#ListCount');
+				var ListItem = document.querySelectorAll('#ListItem');
+				var BtnText = document.getElementById('BtnTextDisplay');
+
+				if (BtnText.innerHTML.match("Text Enabled")) {
+					Opt1Text.style.display = "none";
+					Opt2Text.style.display = "none";
+					Opt3Text.style.display = "none";
+					Opt4Text.style.display = "none";
+					ListTitle.style.display = "none";
+					BtnText.innerHTML = "Text Disabled";
+					for(var i = 0; i < ListItem.length; i++) {
+						ListItem[i].style.display = "none";
+					}
+					for(var i = 0; i < TextOpen.length; i++) {
+						TextOpen[i].style.display = "none";
+					}
+					for(var i = 0; i < TextBack.length; i++) {
+						TextBack[i].style.display = "none";
+					}
+					for(var i = 0; i < ListCount.length; i++) {
+						ListCount[i].style.display = "none";
+					}
+				}
+				else if (BtnText.innerHTML.match("Text Disabled")) {
+					Opt1Text.style.display = "block";
+					Opt2Text.style.display = "block";
+					Opt3Text.style.display = "block";
+					Opt4Text.style.display = "block";
+					ListTitle.style.display = "block";
+					BtnText.innerHTML = "Text Enabled";
+					for(var i = 0; i < ListItem.length; i++) {
+						ListItem[i].style.display = "block";
+					}
+					for(var i = 0; i < TextOpen.length; i++) {
+						TextOpen[i].style.display = "block";
+					}
+					for(var i = 0; i < TextBack.length; i++) {
+						TextBack[i].style.display = "block";
+					}
+					for(var i = 0; i < ListCount.length; i++) {
+						ListCount[i].style.display = "block";
+					}
+				}
+			}
+			function toggleDiv(id) {
+				if (id == 'view1') {
+					document.getElementById('LnkView1').style.fontWeight = "bold";
+					document.getElementById('LnkView1').style.color = "#FFFFFF";
+					document.getElementById('LnkView2').style.fontWeight = "normal";
+					document.getElementById('LnkView2').style.color = "#818181";
+					document.getElementById('LnkView3').style.fontWeight = "normal";
+					document.getElementById('LnkView3').style.color = "#818181";
+					document.getElementById('BtnOption').style.display = "block";
+					document.getElementById('view1').style.display = "block";
+					document.getElementById('view2').style.display = "none";
+					document.getElementById('view3').style.display = "none";
+					document.getElementById('view4').style.display = "none";
+				}
+				else if (id.match('view2')) {
+					document.getElementById('LnkView1').style.fontWeight = "normal";
+					document.getElementById('LnkView1').style.color = "#818181";
+					document.getElementById('LnkView2').style.fontWeight = "bold";
+					document.getElementById('LnkView2').style.color = "#FFFFFF";
+					document.getElementById('LnkView3').style.fontWeight = "normal";
+					document.getElementById('LnkView3').style.color = "#818181";
+					document.getElementById('BtnOption').style.display = "none";
+					document.getElementById('view1').style.display = "none";
+					document.getElementById('view2').style.display = "block";
+					document.getElementById('view3').style.display = "none";
+					document.getElementById('view4').style.display = "none";
+				}
+				else if (id.match('view3')) {
+					document.getElementById('LnkView1').style.fontWeight = "normal";
+					document.getElementById('LnkView1').style.color = "#818181";
+					document.getElementById('LnkView2').style.fontWeight = "normal";
+					document.getElementById('LnkView2').style.color = "#818181";
+					document.getElementById('LnkView3').style.fontWeight = "bold";
+					document.getElementById('LnkView3').style.color = "#FFFFFF";
+					document.getElementById('BtnOption').style.display = "none";
+					document.getElementById('view1').style.display = "none";
+					document.getElementById('view2').style.display = "none";
+					document.getElementById('view3').style.display = "block";
+					document.getElementById('view4').style.display = "none";
+				}
+			}
+		</script>
+		<style>
+			body, h1, h2, h3, h4, h5, h6 {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			img, p {
+				position: absolute;
+			}
+			#PageTitle {
+				position: relative;
+				margin: 0;
+				font-size: 26px;
+				font-weight: bold;
+			}
+			#PageSubTitle {
+				position: relative;
+				margin: 0;
+				font-size: 14px;
+			}
+			.screen {
+				position: relative;
+				width: 640px;
+				height: 480px;
+				border: 4px solid #666666;
+			}
+			.sidenav {
+				height: 100%;
+				width: 160px;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #111;
+				overflow-x: hidden;
+				padding-top: 20px;
+			}
+			.sidenav a {
+				padding: 6px 8px 6px 16px;
+				text-decoration: none;
+				font-size: 16px;
+				color: #818181;
+				display: block;
+			}
+			.sidenav hr {
+				border: none;
+				height: 1px;
+				color: #333333;
+				background-color: #333333;
+			}
+			.sidenav a:hover {
+				color: #f1f1f1;
+			}
+			.main {
+				margin-left: 160px;
+				font-size: 28px;
+				padding: 0px 10px;
+			}
+			.main a {
+				text-decoration: underline;
+				font-size: 16px;
+				font-weight: bold;
+				color: #000000;
+				display: block;
+			}
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 18px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sidenav">
+			<a href="javascript:javascript:void(0)" onclick="toggleDiv('view1')" id="LnkView1" style="color: #FFFFFF; font-weight: bold;">View 1</a>
+			<a href="javascript:javascript:void(0)" onclick="toggleDiv('view2')" id="LnkView2">View 2</a>
+			<a href="javascript:javascript:void(0)" onclick="toggleDiv('view3')" id="LnkView3">View 3</a>
+			<hr />
+			<a href="javascript:return false;" id="BtnBattery" onclick="BatteryChange()">Battery 100%</a>
+			<a href="javascript:return false;" id="BtnTextDisplay" onclick="TextDisplay()">Text Enabled</a>
+			<a href="javascript:return false;" id="BtnOption" onclick="ItemChange()">Item 1/6</a>
+		</div>
+		<div class="main">
+			<p id="PageTitle">Miyoo Mini Theme Preview</p>
+			<p id="PageSubTitle">2022APR30 TheDewd</p>
+			<hr />
+			<div class="screen" id="view1">
+				<!-- Top -->
+				<img style="left: 0px; top: 0px; transform: rotate(180deg);" src="skin/background.png" id="background" />
+				<img style="left: 0px; top: 0px;" src="skin/bg-title.png" id="bg-title" />
+				<img style="left: 20px; top: 9px;" src="skin/miyoo-topbar.png" />
+				<img style="left: 572px; top: 6px;" src="skin/power-full-icon.png" id="power-icon" />
+				<img style="left: 0px; top: 60px;" src="skin/div-line-h.png" id="div-line-h" />
+				<!-- Middle -->
+				<img style="left: 10px; top: 91px;" src="skin/ic-recent-f.png" id="ic-1" />
+				<img style="left: 165px; top: 91px;" src="skin/ic-favorite-n.png" id="ic-2" />
+				<img style="left: 320px; top: 91px;" src="skin/ic-game-n.png" id="ic-3" />
+				<img style="left: 475px; top: 91px;" src="skin/ic-retroarch-n.png" id="ic-4" />
+				<p style="text-align: center; width: 156px; left: 10px; top: 243px; color: #FFFFFF; font-size: 25px;" id="Opt1Text">Recent</p>
+				<p style="text-align: center; width: 156px; left: 165px; top: 243px; color: #FFFFFF; font-size: 25px;" id="Opt2Text">Favorites</p>
+				<p style="text-align: center; width: 156px; left: 320px; top: 243px; color: #FFFFFF; font-size: 25px;" id="Opt3Text">Consoles</p>
+				<p style="text-align: center; width: 156px; left: 475px; top: 243px; color: #FFFFFF; font-size: 25px;" id="Opt4Text">Expert</p>
+				<img style="left: 275px; top: 390px;" src="skin/dot-a.png" id="dot-1" />
+				<img style="left: 290px; top: 390px;" src="skin/dot-n.png" id="dot-2" />
+				<img style="left: 305px; top: 390px;" src="skin/dot-n.png" id="dot-3" />
+				<img style="left: 320px; top: 390px;" src="skin/dot-n.png" id="dot-4" />
+				<img style="left: 335px; top: 390px;" src="skin/dot-n.png" id="dot-5" />
+				<img style="left: 350px; top: 390px;" src="skin/dot-n.png" id="dot-6" />
+				<!-- Bottom -->
+				<img style="left: 0px; top: 420px;" src="skin/tips-bar-bg.png" id="tips-bar-bg" />
+				<img style="left: 20px; top: 423px;" src="skin/icon-A-54.png" id="icon-A-54" />
+				<img style="left: 212px; top: 423px;" src="skin/icon-B-54.png" id="icon-B-54" />
+				<p style="left: 79px; top: 386px; color: #FFFFFF; font-size: 40px;" id="TextOpen">OPEN</p>
+				<p style="left: 271px; top: 386px; color: #FFFFFF; font-size: 40px;" id="TextBack">BACK</p>
+			</div>
+			<div class="screen" id="view2" style="display: none;">
+				<!-- Top -->
+				<img style="left: 0px; top: 0px; transform: rotate(180deg);" src="skin/background.png" id="background" />
+				<img style="left: 0px; top: 0px;" src="skin/bg-title.png" id="bg-title" />
+				<p style="margin: 0; padding-top: 12px; text-align: center; left: 0px; top: 0px; width: 640px; height: 60px; color: #FFFFFF; font-size: 32px;" id="ListTitle">Title</p>
+				<img style="left: 572px; top: 6px;" src="skin/power-full-icon.png" id="power-icon" />
+				<img style="left: 0px; top: 60px;" src="skin/div-line-h.png" id="div-line-h" />
+
+				<!-- Middle -->
+				<img style="left: 0px; top: 64px;" src="skin/bg-list-s.png" id="bg-list-s" />
+				<img style="left: 0px; top: 120px;" src="skin/div-line-h.png" id="div-line-h" />
+				<img style="left: 0px; top: 180px;" src="skin/div-line-h.png" id="div-line-h" />
+				<img style="left: 0px; top: 240px;" src="skin/div-line-h.png" id="div-line-h" />
+				<img style="left: 0px; top: 300px;" src="skin/div-line-h.png" id="div-line-h" />
+				<img style="left: 0px; top: 360px;" src="skin/div-line-h.png" id="div-line-h" />
+				<p style="left: 20px; top: 50px; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<p style="left: 20px; top: 110px; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<p style="left: 20px; top: 170px; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<p style="left: 20px; top: 230px; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<p style="left: 20px; top: 290px; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<p style="left: 20px; top: 350px; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<!-- Bottom -->
+				<img style="left: 0px; top: 420px;" src="skin/tips-bar-bg.png" id="tips-bar-bg" />
+				<img style="left: 20px; top: 423px;" src="skin/icon-A-54.png" id="icon-A-54" />
+				<img style="left: 212px; top: 423px;" src="skin/icon-B-54.png" id="icon-B-54" />
+				<p style="left: 79px; top: 386px; color: #FFFFFF; font-size: 40px;" id="TextOpen">OPEN</p>
+				<p style="left: 271px; top: 386px; color: #FFFFFF; font-size: 40px;" id="TextBack">BACK</p>
+				<p style="left: 549px; top: 386px; color: #FFFFFF; font-size: 40px;" id="ListCount">1/8</p>
+			</div>
+			<div class="screen" id="view3" style="display: none;">
+				<!-- Top -->
+				<img style="left: 0px; top: 0px; transform: rotate(180deg);" src="skin/background.png" id="background" />
+				<img style="left: 0px; top: 0px;" src="skin/bg-title.png" id="bg-title" />
+				<img style="left: 572px; top: 6px;" src="skin/power-full-icon.png" id="power-icon" />
+				<img style="left: 0px; top: 60px;" src="skin/div-line-h.png" id="div-line-h" />
+				<!-- Middle -->
+				<img style="left: 12px; top: 77px;" src="skin/bg-game-item-f.png" id="bg-game-item-1" />
+				<img style="left: 167px; top: 77px;" src="skin/bg-game-item-n.png" id="bg-game-item-2" />
+				<img style="left: 322px; top: 77px;" src="skin/bg-game-item-n.png" id="bg-game-item-3" />
+				<img style="left: 477px; top: 77px;" src="skin/bg-game-item-n.png" id="bg-game-item-4" />
+				<img style="left: 12px; top: 247px;" src="skin/bg-game-item-n.png" id="bg-game-item-5" />
+				<img style="left: 167px; top: 247px;" src="skin/bg-game-item-n.png" id="bg-game-item-6" />
+				<img style="left: 322px; top: 247px;" src="skin/bg-game-item-n.png" id="bg-game-item-7" />
+				<img style="left: 477px; top: 247px;" src="skin/bg-game-item-n.png" id="bg-game-item-8" />
+				<p style="left: 20px; top: 168px; width: 135px; text-align: center; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<p style="left: 176px; top: 168px; width: 135px; text-align: center; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<p style="left: 331px; top: 168px; width: 135px; text-align: center; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<p style="left: 486px; top: 168px; width: 135px; text-align: center; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<p style="left: 20px; top: 338px; width: 135px; text-align: center; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<p style="left: 176px; top: 338px; width: 135px; text-align: center; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<p style="left: 331px; top: 338px; width: 135px; text-align: center; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<p style="left: 486px; top: 338px; width: 135px; text-align: center; color: #FFFFFF; font-size: 25px;" id="ListItem">List Item</p>
+				<!-- Bottom -->
+				<img style="left: 0px; top: 420px;" src="skin/tips-bar-bg.png" id="tips-bar-bg" />
+				<img style="left: 20px; top: 423px;" src="skin/icon-A-54.png" id="icon-A-54" />
+				<img style="left: 212px; top: 423px;" src="skin/icon-B-54.png" id="icon-B-54" />
+				<p style="left: 79px; top: 386px; color: #FFFFFF; font-size: 40px;" id="TextOpen">OPEN</p>
+				<p style="left: 271px; top: 386px; color: #FFFFFF; font-size: 40px;" id="TextBack">BACK</p>
+				<p style="left: 549px; top: 386px; color: #FFFFFF; font-size: 40px;" id="ListCount">1/8</p>
+			</div>
+		</div>
+	</body>
+</html>

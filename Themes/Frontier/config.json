@@ -1,0 +1,43 @@
+{
+    "name":"Frontier",
+    "title":{
+        "font":"wqy-microhei.ttc",
+        "size":24,
+        "color":"#000000"
+    },
+    "path":{
+        "font":"wqy-microhei.ttc",
+        "size":24,
+        "color":"#000000"
+    },
+    "hint":{
+        "font":"wqy-microhei.ttc",
+        "size":18,
+        "color":"#ABABAB"
+    },
+    "currentpage":{
+        "font":"HENB.TTF",
+        "size":20,
+        "color":"#FFFFFF"
+    },
+    "total":{
+        "font":"HENB.TTF",
+        "size":20,
+        "color":"#9C9C9C"
+    },
+    "grid":{
+        "font":"wqy-microhei.ttc",
+        "fontascii":"DIN Condensed Bold.TTF",
+        "grid1x4":22,
+        "grid3x4":22,
+        "color":"#818181",
+        "selectedcolor":"#444444"
+    },
+    "list":{
+        "font":"wqy-microhei.ttc",
+        "fontascii":"DIN Condensed Bold.TTF",
+        "size":22,
+        "color":"#5D5D5D",
+        "selectedcolor":"#444444"       
+    }    
+}   

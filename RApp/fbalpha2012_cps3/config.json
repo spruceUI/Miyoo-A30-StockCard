@@ -1,0 +1,12 @@
+{
+"label":"CPS3",
+"icon":"fbalpha2012_cps3.png",
+"iconsel":"",
+"launch":"launch.sh",
+"rompath":"../../Roms/ARCADE/cps3",
+"imgpath":"../../Imgs/cps3",
+"useswap":1,
+"shortname":1,
+"hidebios":1,
+"extlist":"zip"
+}

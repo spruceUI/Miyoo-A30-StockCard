@@ -1,0 +1,43 @@
+{
+    "name":"Neo Zeon-修改",
+    "title":{
+        "font":"wqy-microhei.ttc",
+        "size":32,
+        "color":"#b49696"
+    },
+    "path":{
+        "font":"wqy-microhei.ttc",
+        "size":24,
+        "color":"#fdf6d7"
+    },
+    "hint":{
+        "font":"wqy-microhei.ttc",
+        "size":36,
+        "color":"#fdf6d7"
+    },
+    "currentpage":{
+        "font":"HENB.TTF",
+        "size":36,
+        "color":"#fdf6d7"
+    },
+    "total":{
+        "font":"HENB.TTF",
+        "size":36,
+        "color":"#fdf6d7"
+    },
+    "grid":{
+        "font":"wqy-microhei.ttc",
+        "fontascii":"HENB.TTF",
+        "grid1x4":25,
+        "grid3x4":18,
+        "color":"#e5e5e5",
+        "selectedcolor":"#fdf6d7"       
+    },
+    "list":{
+        "font":"wqy-microhei.ttc",
+        "fontascii":"HENB.TTF",
+        "size":25,
+        "color":"#fdf6d7",
+        "selectedcolor":"#0000ff"       
+    }
+}   

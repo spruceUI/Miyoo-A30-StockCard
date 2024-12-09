@@ -1,0 +1,18 @@
+{
+"label":"N64",
+"icon":"n64.png",
+"iconsel":"",
+"launch":"launch.sh",
+"rompath":"../../Roms/N64",
+"imgpath":"../../Imgs/N64",
+"useswap":1,
+"shortname":0,
+"hidebios":1,
+"extlist":"n64|z64|zip",
+"launchlist": [
+        {
+            "name": "mupen64plus",
+            "launch": "launch.sh"
+        }
+    ]
+}

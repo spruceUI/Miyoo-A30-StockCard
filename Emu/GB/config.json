@@ -1,0 +1,22 @@
+{
+    "label":"GB",
+    "icon":"gb.png",
+    "iconsel":"",
+    "launch":"launch.sh",
+    "rompath":"../../Roms/GB",
+    "imgpath":"../../Imgs/gb",
+    "useswap":0,
+    "shortname":0,
+    "hidebios":0,
+    "extlist":"gb|gbc|zip|GB|GBC",
+    "launchlist": [
+        {
+            "name": "GAMBATTE",
+            "launch": "launch.sh"
+        },
+        {
+            "name": "MGBA",
+            "launch": "launch1.sh"
+        }
+    ]
+}

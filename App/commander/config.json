@@ -1,0 +1,6 @@
+{
+    "label":"Commander",
+    "icon":"icon.png",
+    "launch":"launch.sh",
+    "description":"Dingux Commander"
+}

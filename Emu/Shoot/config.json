@@ -1,0 +1,26 @@
+{
+"label":"Shoot",
+"icon":"Shoot.png",
+"iconsel":"",
+"launch":"launch.sh",
+"rompath":"../../Roms/Shoot",
+"imgpath":"../../Imgs/Shoot",
+"useswap":1,
+"shortname":1,
+"hidebios":1,
+"extlist":"zip",
+"launchlist": [
+        {
+            "name": "FBA2012",
+            "launch": "launch.sh"
+        },
+        {
+            "name": "FBNEO",
+            "launch": "launch1.sh"
+        },
+		{
+            "name": "MAME2003PLUS",
+            "launch": "launch2.sh"
+        }		
+	]
+}	

@@ -1,0 +1,31 @@
+{
+    "label":"ADRCAE",
+    "icon":"arcade.png",
+    "iconsel":"",
+    "launch":"launch.sh",
+    "rompath":"../../Roms/ARCADE",
+    "imgpath":"../../Imgs/fbneo",
+    "useswap":1,
+    "shortname":1,
+    "hidebios":1,
+    "extlist":"zip",
+    "launchlist": [
+        {
+            "name": "FBNEO",
+            "launch": "launch.sh"
+        },
+        {
+            "name": "FBA2012",
+            "launch": "launch1.sh"
+        },
+		{
+            "name": "MAME2003PLUS",
+            "launch": "launch2.sh"
+        },
+		{
+            "name": "MAME",
+            "launch": "launch3.sh"
+        }
+		
+	]
+}

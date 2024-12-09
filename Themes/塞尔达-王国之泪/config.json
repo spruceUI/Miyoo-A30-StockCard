@@ -1,0 +1,42 @@
+{
+    "name": "塞尔达 - 王国之泪",
+    "author": "NaraMakesGames",
+    "description": "Minimal Tears of the Kingdom",
+    "title": {
+        "font": "wqy-microhei.ttc",
+        "size": 32,
+        "color": "#faf7dd"
+    },
+    "path":{
+        "font":"wqy-microhei.ttc",
+        "size":24,
+        "color":"#faf7dd"
+    },
+    "hint": {
+        "font": "wqy-microhei.ttc",
+        "size": 36,
+        "color": "#faf7dd"
+    },
+    "currentpage": {
+		"font":"HENB.TTF",
+		"size": 36,
+        "color": "#faf7dd"
+    },
+    "total": {
+		"font":"HENB.TTF",
+		"size": 36,
+        "color": "#faf7dd"
+    },
+    "grid": {
+        "font": "wqy-microhei.ttc",
+        "grid1x4": 25,
+        "grid3x4": 18,
+        "color": "#545454",
+        "selectedcolor": "#faf7dd"
+    },
+    "list": {
+        "font": "wqy-microhei.ttc",
+        "size": 24,
+        "color": "#faf7dd"
+    }
+}
